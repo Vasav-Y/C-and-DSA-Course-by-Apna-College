@@ -1,0 +1,22 @@
+Fundamental data-types
+--> int
+--> char
+-->float
+-->boolean
+
+1 byte = 8bits
+leftmost bit is also called MSB , i.e, Most important bit
+
+int data type uses 4 byte of space in memory
+char date type uses 1 byte of space in memory
+float data type uses 4 byte of space in memory
+bool date type uses 1 byte of space in memory
+
+
+#include --> Preprocessor directive 
+used to include files
+
+iostream --> header file for taking input and printing output
+
+std stands sor standard
+cout belongs to the namesapce standard
