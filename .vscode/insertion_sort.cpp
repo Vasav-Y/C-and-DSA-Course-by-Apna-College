@@ -1,6 +1,5 @@
-/* SELECTION SORT */
-
-/* Find the minimum elementin unsorted array and swap it with element at beginning */
+/* INSERTION SORT */
+/* Insert an element from unsorted array to its correct position in sorted array */
 
 #include <iostream>
 using namespace std;
@@ -17,18 +16,16 @@ int main()
         cin >> arr[k];
     }
 
-    for (int i = 0; i < n-1; i++)
+    for (int i = 1; i < n; i++)
     {
-        for(int j = (i+1); j<n; j++)
+        int current = arr[i];
+        int j = i -1;
+        while(arr[j]>current && j>=0)
         {
-            if(arr[i]>arr[j])
-            {
-                int temp;
-                temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-            }
+            arr[j+1] = arr[j];
+            j--;
         }
+        arr[j+1] = current;
     }
     cout << "Elements of array after sorting are : ";
     for (int i = 0; i < n; i++)
