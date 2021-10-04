@@ -11,6 +11,8 @@ int data type uses 4 byte of space in memory
 char date type uses 1 byte of space in memory
 float data type uses 4 byte of space in memory
 bool date type uses 1 byte of space in memory
+short int data type uses 2 byte of space in memory
+long int data type uses 8 byte of space in memory
 
 
 #include --> Preprocessor directive 
