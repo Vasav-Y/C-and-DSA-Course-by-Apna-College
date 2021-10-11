@@ -1,17 +1,48 @@
 // C++ program to demonstrate
 // Strings using C style
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// 
+// int main()
+// {
+// 
+// 	// Declare and initialize string
+// 	char str[] = "Geeks";
+// 
+// 	// Print string
+// 	cout << str;
+// 
+// 	return 0;
+// }
+
+
+// C++ program to illustrate the traversal
+// of the array
+#include "iostream"
 using namespace std;
 
+// Function to illustrate traversal in arr[]
+void traverseArray(int arr[], int N)
+{
+
+	// Iterate from [1, N-1] and print
+	// the element at that index
+	for (int i = 0; i < N; i++) {
+		cout << arr[i] << ' ';
+	}
+}
+
+// Driver Code
 int main()
 {
 
-	// Declare and initialize string
-	char str[] = "Geeks";
+	// Given array
+	int arr[] = { 1, 2, 3, 4 };
 
-	// Print string
-	cout << str;
+	// Size of the array
+	int N = sizeof(arr) / sizeof(arr[0]);
 
-	return 0;
+	// Function call
+	traverseArray(arr, N);
 }
