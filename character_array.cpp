@@ -46,3 +46,5 @@ int main()
 	// Function call
 	traverseArray(arr, N);
 }
+/* This is how we can traverse a character array */
+/* will surely start making good contributions from tommorow*/
