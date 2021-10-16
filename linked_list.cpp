@@ -40,7 +40,7 @@ void insertAtTail(node* &head, int val)// here we are taking head by reference b
 {
     node* n= new node(val);
 
-    if(head = NULL)
+    if(head == NULL)
     {
         head = n;
         return;
@@ -54,6 +54,13 @@ void insertAtTail(node* &head, int val)// here we are taking head by reference b
     temp->next = n;
 }
 
+void insertAthead(node* &head, int val)
+{
+    node* n= new node(val);
+    n->next = head;
+    head = n;
+}
+
 void display(node* head)// here we are taking head by value because we'll not be modifying our Linked List
 {
     node* temp = head;
@@ -63,13 +70,30 @@ void display(node* head)// here we are taking head by value because we'll not be
     }
     cout<<"NULL"<<endl;
 }
+
+bool search(node* head, int key)
+{
+    node* temp = head;
+    while(temp != NULL)
+    {
+        if(temp->data == key)
+        {
+            return true;
+        }
+        temp = temp->next;
+    }
+    return false;
+}
+
 int main()
 {
     node* head= NULL;
     insertAtTail(head, 1);
     insertAtTail(head, 2);
     insertAtTail(head, 3);
+    insertAthead(head, 4);
     display(head);
+    cout<<search(head, 5);
 
     return 0;
 }
