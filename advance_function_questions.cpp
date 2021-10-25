@@ -31,9 +31,9 @@
 // #include <iostream>
 // #include <cmath>
 // using namespace std;
-
+// 
 // void triplet(int a, int b, int c);
-
+// 
 // int main()
 // {
 //     int n = 3, x, y, z, max;
@@ -61,10 +61,10 @@
 //             triplet(z, y, x);
 //         }
 //     }
-
+// 
 //     return 0;
 // }
-
+// 
 // void triplet(int a, int b, int c)
 // {
 //     a = pow(a, 2);
