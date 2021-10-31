@@ -1,5 +1,5 @@
-//array vs linked list
-//array
+//Array vs Linked List
+//Array
 //--> size fixed
 //--> contiguous block of memory
 //--> inserting or deleting is costly
