@@ -20,7 +20,7 @@ int main()
     {
         for(int j = 0; j<n-i; j++)
         {
-            if(arr[j+1]>arr[j])
+            if(arr[j+1]<arr[j])
             {
                 int temp;
                 temp = arr[j];
@@ -29,5 +29,11 @@ int main()
             }
         }
     }
+
+    for (int k = 0; k < n; k++)
+    {
+        cout << arr[k]<<" ";
+    }
+
     return 0;
 }
